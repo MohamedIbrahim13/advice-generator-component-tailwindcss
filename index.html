@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./build/styles.css" />
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+
+<body class="h-screen bg-[color:var(--darkGrayishBlue)]">
+  <div class="text-center w-[90vw] lg:w-[42.5vw] md:w-[60vw] p-10 rounded-2xl bg-[color:var(--grayishBlue)] relative">
+    <h6 class="text-[color:var(--neonGreen)] text-xs font-normal" id="number"></h6>
+    <p class="text-[color:var(--lightCyan)] font-extrabold my-5" id="description"></p>
+
+    <div class="flex justify-center items-center flex-1 object-contain h-8">
+
+      <img src="./images/pattern-divider-desktop.svg" alt="" width="100%">
+
+    </div>
+    <div
+      class="dice-container flex justify-center items-center p-3.5 h-12 w-12 rounded-full bg-[color:var(--neonGreen)] absolute duration-200 cursor-pointer hover:rotate-90 -bottom-6 right-1/2 -mr-6" id="role">
+      <img src="./images/icon-dice.svg" alt="">
+    </div>
+
+  </div>
+
+  <script src="./node_modules/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
